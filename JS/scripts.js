@@ -9,6 +9,9 @@ function showTime() {
     var minute = date.getMinutes(); //0 - 59
     var seconds = date.getSeconds(); //0 - 59
     var period = "AM"; //We're going to assume that we're in AM to start
+    var month = date.getMonth();
+    var day = date.getDate();
+    var year = date.getFullYear();
 
     //We need to make sure the hour is properly represented in 12-hr time, and we also need to determine whether we should display AM or PM
 
@@ -35,10 +38,22 @@ function showTime() {
 
     //String to store the current time
     var time = hour + ":" + minute + ":" + seconds + " " + period;
+    var currentDate = month + "/" + day + "/" + year;
+
 
     document.getElementById("clockDisplay").innerText = time;
+    document.getElementById("dateDisplay").innerText = currentDate;
     
-    setTimeout(showTime, 1000); //Schedule the showTime function to be called after 1000 ms (1 second)
-}
+    //GETTING THE DATE
+
+    //var dayOfWeek = date.getDay(); Returns a value between 0 and 6 that corresponds to the current day of the week
+    
+    //var dayOfMonth = date.getDate();  Returns the current day in the month (1-31)
+
+    //var month =  date.getMonth(); Returns a value between 0 adn 11 that corresponds to the current month
+
+    //console.log(getDayOfTheWeek(dayOfWeek));
+    
+    setTimeout(showTime, 1000); } //Schedule the showTime function to be called after 1000 ms (1 second)
 
 showTime();

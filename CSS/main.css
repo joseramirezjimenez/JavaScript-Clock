@@ -3,6 +3,36 @@ body {
 }
 
 #clockDisplay {
-    color: white;
+    color: #fc9d03;
+    position: absolute;
+    top: 50%; /* Move element down 50% of the height of the parent */
+    left: 50%;/* Move element right 50% of the width of the parent */
+    transform: translateX(-50%) translateY(-50%); /* Move the element 50% of its width to left and 50% of its height up */
+    font-size: 60px;
+    font-family: 'Special Elite', cursive;
 }
 
+#dateDisplay {
+    color: #ff0000;
+    position: absolute;
+    top: 3%; 
+    left: 37%;
+    transform: translateX(-60%) translateY(-60);         
+    font-size: 50px;
+    font-family: 'Special Elite', cursive;
+}
+
+.headerLink {
+    padding: 5px 10px;
+    text-decoration: none;
+    color: red;
+    font-size: 18pt;
+}
+
+#githubLink {
+    float: left;
+}
+
+#linkedinLink {
+    float: right;
+}
