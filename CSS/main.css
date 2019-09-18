@@ -15,8 +15,8 @@ body {
 #dateDisplay {
     color: #ff0000;
     position: absolute;
-    top: 3%; 
-    left: 37%;
+    top: 60%; 
+    left: 40%;
     transform: translateX(-60%) translateY(-60);         
     font-size: 50px;
     font-family: 'Special Elite', cursive;
@@ -36,4 +36,10 @@ body {
 
 #linkedinLink {
     float: right;
+}
+
+.header a:hover{
+    background-color: black;
+    color: #fc9d03;
+
 }
